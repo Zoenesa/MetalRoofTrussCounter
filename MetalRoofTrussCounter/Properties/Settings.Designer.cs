@@ -26,5 +26,8 @@ namespace MetalRoofTrussCounter.Properties
                 return defaultInstance;
             }
         }
+
+        
+        
     }
 }

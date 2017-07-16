@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telerik.WinControls.UI;
 
 namespace MetalRoofTrussCounter
 {
@@ -15,8 +18,24 @@ namespace MetalRoofTrussCounter
         public frmHitungLuasAtap()
         {
             InitializeComponent();
+
+            double d = 0.00;
+            inputTeks = new Dictionary<int, RadTextBox>()
+            {
+                { 0, radTextBoxPanjangBangunan },
+                { 1, radTextBoxLebarBangunan },
+                { 2, radTextBoxSudut },
+                { 3, radTextBoxOverstek },
+                { 4, radTextBoxJarakRafter }
+            };
+
+            for (int i = 0; i < inputTeks.Count; i++)
+            {
+                inputTeks[i].NullText = d.ToString("##0.00");
+            }
         }
 
+        private Dictionary<int, RadTextBox> inputTeks = new Dictionary<int, RadTextBox>();
         private double PanjangBangunan;
         private double LebarBangunan;
         private double SudutKemiringan;
@@ -100,7 +119,7 @@ namespace MetalRoofTrussCounter
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
+         
     }
 }

@@ -34,33 +34,35 @@
             this.radTextBoxPanjangBangunan = new Telerik.WinControls.UI.RadTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.radTextBoxLebarBangunan = new Telerik.WinControls.UI.RadTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.radTextBoxSudut = new Telerik.WinControls.UI.RadTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radTextBoxOverstek = new Telerik.WinControls.UI.RadTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.radTextBoxJarakRafter = new Telerik.WinControls.UI.RadTextBox();
+            this.radTextBoxOverstek = new Telerik.WinControls.UI.RadTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.radTextBoxSudut = new Telerik.WinControls.UI.RadTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.radTextBoxLebarBangunan = new Telerik.WinControls.UI.RadTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.radRadioButton2 = new Telerik.WinControls.UI.RadRadioButton();
             this.radRadioButton1 = new Telerik.WinControls.UI.RadRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radStatusStrip1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radBtnHitungLuasAtap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxPanjangBangunan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxLebarBangunan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxSudut)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxOverstek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxJarakRafter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxOverstek)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxSudut)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxLebarBangunan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radRadioButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radRadioButton1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             // 
             this.radStatusStrip1.Location = new System.Drawing.Point(0, 308);
             this.radStatusStrip1.Name = "radStatusStrip1";
-            this.radStatusStrip1.Size = new System.Drawing.Size(302, 21);
+            this.radStatusStrip1.Size = new System.Drawing.Size(582, 21);
             this.radStatusStrip1.TabIndex = 0;
             this.radStatusStrip1.Text = "radStatusStrip1";
             this.radStatusStrip1.ThemeName = "Office2010Black";
@@ -93,10 +95,11 @@
             this.radTextBoxPanjangBangunan.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radTextBoxPanjangBangunan.Location = new System.Drawing.Point(193, 22);
             this.radTextBoxPanjangBangunan.Name = "radTextBoxPanjangBangunan";
-            this.radTextBoxPanjangBangunan.NullText = "0,00";
             this.radTextBoxPanjangBangunan.Size = new System.Drawing.Size(100, 21);
             this.radTextBoxPanjangBangunan.TabIndex = 1;
             this.radTextBoxPanjangBangunan.ThemeName = "Office2010Black";
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxPanjangBangunan.GetChildAt(0).GetChildAt(0))).NullTextColor = System.Drawing.SystemColors.ControlDarkDark;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxPanjangBangunan.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label1
             // 
@@ -137,75 +140,6 @@
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Solid;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.radGroupBox1.GetChildAt(0).GetChildAt(1).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(2, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Lebar Bangunan";
-            // 
-            // radTextBoxLebarBangunan
-            // 
-            this.radTextBoxLebarBangunan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radTextBoxLebarBangunan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radTextBoxLebarBangunan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radTextBoxLebarBangunan.Location = new System.Drawing.Point(193, 49);
-            this.radTextBoxLebarBangunan.Name = "radTextBoxLebarBangunan";
-            this.radTextBoxLebarBangunan.NullText = "0,00";
-            this.radTextBoxLebarBangunan.Size = new System.Drawing.Size(100, 21);
-            this.radTextBoxLebarBangunan.TabIndex = 3;
-            this.radTextBoxLebarBangunan.ThemeName = "Office2010Black";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(2, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Target Sudut Kemiringan";
-            // 
-            // radTextBoxSudut
-            // 
-            this.radTextBoxSudut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radTextBoxSudut.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radTextBoxSudut.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radTextBoxSudut.Location = new System.Drawing.Point(193, 76);
-            this.radTextBoxSudut.Name = "radTextBoxSudut";
-            this.radTextBoxSudut.NullText = "0,00";
-            this.radTextBoxSudut.Size = new System.Drawing.Size(100, 21);
-            this.radTextBoxSudut.TabIndex = 5;
-            this.radTextBoxSudut.ThemeName = "Office2010Black";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(2, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "OverStek Keliling";
-            // 
-            // radTextBoxOverstek
-            // 
-            this.radTextBoxOverstek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radTextBoxOverstek.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radTextBoxOverstek.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radTextBoxOverstek.Location = new System.Drawing.Point(193, 103);
-            this.radTextBoxOverstek.Name = "radTextBoxOverstek";
-            this.radTextBoxOverstek.NullText = "0,00";
-            this.radTextBoxOverstek.Size = new System.Drawing.Size(100, 21);
-            this.radTextBoxOverstek.TabIndex = 7;
-            this.radTextBoxOverstek.ThemeName = "Office2010Black";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -224,21 +158,94 @@
             this.radTextBoxJarakRafter.ForeColor = System.Drawing.SystemColors.ControlText;
             this.radTextBoxJarakRafter.Location = new System.Drawing.Point(193, 130);
             this.radTextBoxJarakRafter.Name = "radTextBoxJarakRafter";
-            this.radTextBoxJarakRafter.NullText = "0,00";
             this.radTextBoxJarakRafter.Size = new System.Drawing.Size(100, 21);
             this.radTextBoxJarakRafter.TabIndex = 9;
             this.radTextBoxJarakRafter.ThemeName = "Office2010Black";
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxJarakRafter.GetChildAt(0).GetChildAt(0))).NullTextColor = System.Drawing.SystemColors.ControlDarkDark;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxJarakRafter.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // radTextBoxOverstek
+            // 
+            this.radTextBoxOverstek.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radTextBoxOverstek.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBoxOverstek.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radTextBoxOverstek.Location = new System.Drawing.Point(193, 103);
+            this.radTextBoxOverstek.Name = "radTextBoxOverstek";
+            this.radTextBoxOverstek.Size = new System.Drawing.Size(100, 21);
+            this.radTextBoxOverstek.TabIndex = 7;
+            this.radTextBoxOverstek.ThemeName = "Office2010Black";
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxOverstek.GetChildAt(0).GetChildAt(0))).NullTextColor = System.Drawing.SystemColors.ControlDarkDark;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxOverstek.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(2, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "OverStek Keliling";
+            // 
+            // radTextBoxSudut
+            // 
+            this.radTextBoxSudut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radTextBoxSudut.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBoxSudut.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radTextBoxSudut.Location = new System.Drawing.Point(193, 76);
+            this.radTextBoxSudut.Name = "radTextBoxSudut";
+            this.radTextBoxSudut.Size = new System.Drawing.Size(100, 21);
+            this.radTextBoxSudut.TabIndex = 5;
+            this.radTextBoxSudut.ThemeName = "Office2010Black";
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxSudut.GetChildAt(0).GetChildAt(0))).NullTextColor = System.Drawing.SystemColors.ControlDarkDark;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxSudut.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(2, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Target Sudut Kemiringan";
+            // 
+            // radTextBoxLebarBangunan
+            // 
+            this.radTextBoxLebarBangunan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.radTextBoxLebarBangunan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTextBoxLebarBangunan.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radTextBoxLebarBangunan.Location = new System.Drawing.Point(193, 49);
+            this.radTextBoxLebarBangunan.Name = "radTextBoxLebarBangunan";
+            this.radTextBoxLebarBangunan.Size = new System.Drawing.Size(100, 21);
+            this.radTextBoxLebarBangunan.TabIndex = 3;
+            this.radTextBoxLebarBangunan.ThemeName = "Office2010Black";
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxLebarBangunan.GetChildAt(0).GetChildAt(0))).NullTextColor = System.Drawing.SystemColors.ControlDarkDark;
+            ((Telerik.WinControls.UI.RadTextBoxItem)(this.radTextBoxLebarBangunan.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(2, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Lebar Bangunan";
             // 
             // radRadioButton2
             // 
             this.radRadioButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.radRadioButton2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radRadioButton2.Location = new System.Drawing.Point(229, 59);
+            this.radRadioButton2.Location = new System.Drawing.Point(215, 59);
             this.radRadioButton2.Name = "radRadioButton2";
-            this.radRadioButton2.Size = new System.Drawing.Size(49, 18);
+            this.radRadioButton2.Size = new System.Drawing.Size(77, 18);
             this.radRadioButton2.TabIndex = 2;
             this.radRadioButton2.TabStop = false;
-            this.radRadioButton2.Text = "Limas";
+            this.radRadioButton2.Text = "Limas / Hip";
             this.radRadioButton2.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // radRadioButton1
@@ -246,11 +253,11 @@
             this.radRadioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.radRadioButton1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.radRadioButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.radRadioButton1.Location = new System.Drawing.Point(22, 59);
+            this.radRadioButton1.Location = new System.Drawing.Point(2, 59);
             this.radRadioButton1.Name = "radRadioButton1";
-            this.radRadioButton1.Size = new System.Drawing.Size(53, 18);
+            this.radRadioButton1.Size = new System.Drawing.Size(93, 18);
             this.radRadioButton1.TabIndex = 2;
-            this.radRadioButton1.Text = "Pelana";
+            this.radRadioButton1.Text = "Gable / Pelana";
             this.radRadioButton1.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.radRadioButton1.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
             // 
@@ -265,16 +272,6 @@
             this.panel1.Size = new System.Drawing.Size(302, 89);
             this.panel1.TabIndex = 3;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::MetalRoofTrussCounter.Properties.Resources.Gable_2;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = global::MetalRoofTrussCounter.Properties.Resources.Hip_2;
@@ -285,17 +282,38 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // Form1
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::MetalRoofTrussCounter.Properties.Resources.Gable_2;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::MetalRoofTrussCounter.Properties.Resources.Dimension_Gable;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(308, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(274, 290);
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // frmHitungLuasAtap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(89)))), ((int)(((byte)(89)))));
-            this.ClientSize = new System.Drawing.Size(302, 329);
+            this.ClientSize = new System.Drawing.Size(582, 329);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.radGroupBox1);
             this.Controls.Add(this.radStatusStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Name = "Form1";
+            this.Name = "frmHitungLuasAtap";
             // 
             // 
             // 
@@ -308,16 +326,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxLebarBangunan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxSudut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxOverstek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radTextBoxJarakRafter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxOverstek)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxSudut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBoxLebarBangunan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radRadioButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radRadioButton1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -345,6 +364,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

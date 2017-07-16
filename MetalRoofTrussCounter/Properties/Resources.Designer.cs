@@ -63,6 +63,36 @@ namespace MetalRoofTrussCounter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dimension_Gable {
+            get {
+                object obj = ResourceManager.GetObject("Dimension_Gable", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dimension_Hip {
+            get {
+                object obj = ResourceManager.GetObject("Dimension_Hip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dimension_Shed {
+            get {
+                object obj = ResourceManager.GetObject("Dimension_Shed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gable_2 {
             get {
                 object obj = ResourceManager.GetObject("Gable_2", resourceCulture);
